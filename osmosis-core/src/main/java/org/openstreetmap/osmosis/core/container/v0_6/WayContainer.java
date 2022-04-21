@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreClassRegister;
 import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 
+import java.io.Serializable;
+
 
 /**
  * Entity container implementation for ways.
  * 
  * @author Brett Henderson
  */
-public class WayContainer extends EntityContainer {
+public class WayContainer extends EntityContainer implements Serializable {
 	
 	private Way way;
 	

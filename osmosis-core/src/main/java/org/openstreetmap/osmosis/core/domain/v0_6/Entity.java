@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.domain.v0_6;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
 import java.util.Map;
@@ -19,7 +20,7 @@ import org.openstreetmap.osmosis.core.store.Storeable;
  * 
  * @author Brett Henderson
  */
-public abstract class Entity implements Storeable {
+public abstract class Entity implements Storeable, Serializable {
 	
 	private CommonEntityData entityData;
 	

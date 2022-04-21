@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.util;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Iterator;
 
@@ -14,7 +15,7 @@ import java.util.Iterator;
  * 
  * @param <E> The type of data stored within the collection.
  */
-public class CollectionWrapper<E> implements Collection<E> {
+public class CollectionWrapper<E> implements Collection<E>, Serializable {
 
 	
 	private Collection<E> wrappedCollection;

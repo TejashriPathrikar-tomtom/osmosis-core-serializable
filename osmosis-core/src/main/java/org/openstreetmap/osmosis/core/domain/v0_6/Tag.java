@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 import org.openstreetmap.osmosis.core.store.Storeable;
 
+import java.io.Serializable;
+
 
 /**
  * A data class representing a single OSM tag.
  * 
  * @author Brett Henderson
  */
-public class Tag implements Comparable<Tag>, Storeable {
+public class Tag implements Comparable<Tag>, Storeable, Serializable {
 
     /**
      * The key identifying the tag.

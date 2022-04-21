@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreClassRegister;
 import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 
+import java.io.Serializable;
+
 
 /**
  * Entity container implementation for relations.
  * 
  * @author Brett Henderson
  */
-public class RelationContainer extends EntityContainer {
+public class RelationContainer extends EntityContainer implements Serializable {
 	
 	private Relation relation;
 	

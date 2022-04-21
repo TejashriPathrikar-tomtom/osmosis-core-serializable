@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.domain.v0_6;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.HashMap;
@@ -18,7 +19,7 @@ import org.openstreetmap.osmosis.core.util.IntAsChar;
  * 
  * @author Brett Henderson
  */
-public class TagCollectionImpl extends CollectionWrapper<Tag> implements TagCollection {
+public class TagCollectionImpl extends CollectionWrapper<Tag> implements TagCollection, Serializable {
 	
 	/**
 	 * Creates a new instance.

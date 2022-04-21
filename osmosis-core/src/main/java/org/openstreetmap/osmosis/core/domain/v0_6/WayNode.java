@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 import org.openstreetmap.osmosis.core.store.Storeable;
 
+import java.io.Serializable;
+
 
 /**
  * A data class representing a reference to an OSM node.
  * 
  * @author Brett Henderson
  */
-public class WayNode implements Comparable<WayNode>, Storeable {
+public class WayNode implements Comparable<WayNode>, Storeable, Serializable {
 
 	/**
 	 * When sending way nodes with location information included through the Osmosis pipeline, a metadata key with this

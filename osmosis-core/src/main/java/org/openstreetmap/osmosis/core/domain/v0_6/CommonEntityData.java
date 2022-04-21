@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.domain.v0_6;
 
+import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
@@ -25,7 +26,7 @@ import org.openstreetmap.osmosis.core.util.LongAsInt;
  * Contains data common to all entity types. This is separated from the entity class to allow it to
  * be instantiated before all the data required for a full entity is available.
  */
-public class CommonEntityData implements Storeable {
+public class CommonEntityData implements Storeable, Serializable {
 	
 	private long id;
 	private int version;

@@ -7,6 +7,8 @@ import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 import org.openstreetmap.osmosis.core.store.Storeable;
 
+import java.io.Serializable;
+
 
 /**
  * A value class representing a single OSM user, comprised of user name and id.
@@ -16,7 +18,7 @@ import org.openstreetmap.osmosis.core.store.Storeable;
  * @author Karl Newman
  * @author Brett Henderson
  */
-public class OsmUser implements Storeable {
+public class OsmUser implements Storeable, Serializable {
 	private String name;
 	private int id;
 	

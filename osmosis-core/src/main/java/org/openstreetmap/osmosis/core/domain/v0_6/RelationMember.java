@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 import org.openstreetmap.osmosis.core.store.Storeable;
 
+import java.io.Serializable;
+
 
 /**
  * A data class representing a single member within a relation entity.
  *
  * @author Brett Henderson
  */
-public class RelationMember implements Comparable<RelationMember>, Storeable {
+public class RelationMember implements Comparable<RelationMember>, Storeable, Serializable {
 	
 	private long memberId;
 	private EntityType memberType;

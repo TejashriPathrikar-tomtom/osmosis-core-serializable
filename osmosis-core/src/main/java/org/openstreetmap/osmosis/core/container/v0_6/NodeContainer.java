@@ -6,13 +6,15 @@ import org.openstreetmap.osmosis.core.store.StoreClassRegister;
 import org.openstreetmap.osmosis.core.store.StoreReader;
 import org.openstreetmap.osmosis.core.store.StoreWriter;
 
+import java.io.Serializable;
+
 
 /**
  * Entity container implementation for nodes.
  * 
  * @author Brett Henderson
  */
-public class NodeContainer extends EntityContainer {
+public class NodeContainer extends EntityContainer implements Serializable {
 	
 	private Node node;
 	

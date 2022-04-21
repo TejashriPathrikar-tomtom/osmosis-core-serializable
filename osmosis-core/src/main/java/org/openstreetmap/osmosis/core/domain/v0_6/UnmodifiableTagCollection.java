@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.domain.v0_6;
 
+import java.io.Serializable;
 import java.util.Collections;
 import java.util.Map;
 
@@ -14,7 +15,7 @@ import org.openstreetmap.osmosis.core.util.CollectionWrapper;
  * 
  * @author Brett Henderson
  */
-public class UnmodifiableTagCollection extends CollectionWrapper<Tag> implements TagCollection {
+public class UnmodifiableTagCollection extends CollectionWrapper<Tag> implements TagCollection, Serializable {
 
 	private TagCollection wrappedTags;
 	

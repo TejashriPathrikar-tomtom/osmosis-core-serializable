@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.util;
 
+import java.io.Serializable;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.HashMap;
@@ -20,7 +21,7 @@ import java.util.Set;
  * @param <V>
  *            the type of mapped values
  */
-public class LazyHashMap<K, V> implements Map<K, V> {
+public class LazyHashMap<K, V> implements Map<K, V>, Serializable {
 
 	private Map<K, V> internalMap;
 	

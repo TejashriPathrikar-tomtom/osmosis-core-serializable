@@ -1,6 +1,7 @@
 // This software is released into the Public Domain.  See copying.txt for details.
 package org.openstreetmap.osmosis.core.domain.common;
 
+import java.io.Serializable;
 import java.util.Date;
 
 
@@ -9,7 +10,7 @@ import java.util.Date;
  * 
  * @author Brett Henderson
  */
-public class SimpleTimestampContainer implements TimestampContainer {
+public class SimpleTimestampContainer implements TimestampContainer, Serializable {
 	
 	private Date timestamp;
 	
